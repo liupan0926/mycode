@@ -6,4 +6,11 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserMapper {
     User Sel(int id);
+    
+    /**
+     * 
+     * @param user
+     * @return
+     */
+    Integer insertUser(User user);
 }

@@ -15,4 +15,15 @@ public class UserService {
         return userMapper.Sel(id);
     }
 
+    public Integer InsertUser(User user) {
+
+        try {
+            Integer userId = userMapper.insertUser(user);
+            return userId;
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        return 100;
+    }
+
 }
