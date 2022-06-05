@@ -58,7 +58,7 @@ public class FirstMissingPositive {
             }
         }
         if (min == -1) {
-            min = 1;
+            result = 1;
         } else if (min > 1) {
             result = 1;
         } else {
@@ -69,6 +69,5 @@ public class FirstMissingPositive {
             result = min;
         }
         return result;
-
     }
 }

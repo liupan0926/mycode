@@ -6,8 +6,8 @@ package com.example.leetcode;
  * @author liupan May 23, 2022 7:06:02 PM
  */
 public class ListNode {
-    private int val;
-    ListNode    next;
+    int      val;
+    ListNode next;
 
     public ListNode() {
     }
@@ -36,4 +36,5 @@ public class ListNode {
     public void setNext(ListNode next) {
         this.next = next;
     }
+
 }
