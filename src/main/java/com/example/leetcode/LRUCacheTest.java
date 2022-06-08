@@ -25,6 +25,12 @@ public class LRUCacheTest {
         ListNode node5 = new ListNode(5);
 
         ListNode node6 = new ListNode(6);
+        
+
+        ListNode node7 = new ListNode(2);
+        
+
+        ListNode node8 = new ListNode(3);
 
         list.insertNode(node1);
         list.insertNode(node2);
@@ -38,6 +44,11 @@ public class LRUCacheTest {
         list.printListNode();
 
         list.insertNode(node6);
+        list.printListNode();
+        
+        list.insertNode(node7);
+        list.printListNode();
+        list.insertNode(node8);
         list.printListNode();
 
     }

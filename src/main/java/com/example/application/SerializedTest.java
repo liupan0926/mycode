@@ -20,7 +20,7 @@ public class SerializedTest {
         tc.setId(1L);
         tc.setName("ceshi class");
 
-        serializedClass(tc);
+        //serializedClass(tc);
 
         TestClass dd = deserialzedClass();
 

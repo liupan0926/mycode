@@ -73,6 +73,8 @@ public class SingLinkedList {
                 deleteNode();
             }
         } else { //如果在，需要挪动节点
+            //这里的node的 next 是为空的。
+            node = cur.next;
             cur.next = node.next;
             node.next = head.next;
             head.next = node;
