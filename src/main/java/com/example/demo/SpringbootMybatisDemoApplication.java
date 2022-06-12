@@ -21,7 +21,6 @@ public class SpringbootMybatisDemoApplication {
      */
     public static void main(String[] args) {
         SpringApplication.run(SpringbootMybatisDemoApplication.class, args);
-
         //        ConfigurableApplicationContext context = SpringApplication.run(SpringbootMybatisDemoApplication.class, args);
         //
         //        System.out.println("----------------------" + context.getBean(PropertiesBean.class));

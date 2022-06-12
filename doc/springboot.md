@@ -98,6 +98,7 @@ spring 设计模式
 
 https://mp.weixin.qq.com/s?spm=ata.21736010.0.0.70df75367cb4sc&__biz=Mzg2OTA0Njk0OA==&mid=2247485303&idx=1&sn=9e4626a1e3f001f9b0d84a6fa0cff04a&chksm=cea248bcf9d5c1aaf48b67cc52bac74eb29d6037848d6cf213b0e5466f2d1fda970db700ba41&token=255050878&lang=zh_CN%23rd
 
+0.单例模式
 
 1.工厂模式
 
