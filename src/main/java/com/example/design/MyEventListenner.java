@@ -8,7 +8,7 @@ public class MyEventListenner implements ApplicationListener<MyApplicationEvent>
 
     @Override
     public void onApplicationEvent(MyApplicationEvent event) {
-        System.out.println("接收到的信息是：" + event.getMessage());
+        System.out.println("接收到的信息是：" + event.getMessage() + "," + event.getSource().toString());
     }
 
 }

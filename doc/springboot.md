@@ -108,6 +108,15 @@ https://mp.weixin.qq.com/s?spm=ata.21736010.0.0.70df75367cb4sc&__biz=Mzg2OTA0Njk
 
 4.观察者模式
 
+spring 的 event的事件模型
+
+
+5.访问者模式
+
+lombok的注解实现方式，抽象语法树的访问
+
+
+
 
 
 
