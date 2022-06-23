@@ -1,11 +1,14 @@
 package com.example.collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * 类HashMapTestClass.java的实现描述：TODO 类实现描述
@@ -41,6 +44,12 @@ public class HashMapTestClass {
         List l1 = new ArrayList<>();
         
         List l2 = new LinkedList<>();
+        
+        
+        Vector<String> ss = new Vector<>();
+        
+        
+        List ll = new CopyOnWriteArrayList<>();
 
     }
 }

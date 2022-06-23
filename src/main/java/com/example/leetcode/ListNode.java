@@ -1,5 +1,8 @@
 package com.example.leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 链表原型 类ListNode.java的实现描述：TODO 类实现描述
  * 
@@ -37,5 +40,14 @@ public class ListNode {
         this.next = next;
     }
 
+    public static void printListNode(ListNode head) {
+        List<Integer> list = new ArrayList<>();
+        ListNode tem = head;
+        while (tem != null) {
+            list.add(tem.val);
+            tem = tem.next;
+        }
+        System.out.println(list);
+    }
 
 }

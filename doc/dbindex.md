@@ -67,6 +67,10 @@ InnoDb 和 MySqlDB,数据引擎不一样
 
  串行性
 
+ https://blog.csdn.net/jzj18792145926/article/details/123181752
+
+
+ ACID 
 
 
 ##自增的索引 和 UUID的索引

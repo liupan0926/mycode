@@ -62,6 +62,11 @@ https://blog.csdn.net/m0_60478027/article/details/119215355
 3.缓存的高可用架构，避免单点故障。redis 哨兵模式。
 
 
+##缓存穿透
+
+热点key过期
+
+
 
 
 

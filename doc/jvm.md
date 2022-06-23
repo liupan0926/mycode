@@ -6,11 +6,6 @@
 
 
 
-
-
-
-
-
 #JVM 数据结构
 
 
@@ -45,6 +40,20 @@
 
 
 
+##Error 跟 Exception. throwable
+
+
+Error:
+
+outOfMemory ,stackoverflow
+
+
+Exception: 可检查 和 不可检查
+
+可检查异常: 文件操作类， 时间转换
+
+不可检查的异常：NullPoint ,ArrayIndex
+
 
 
 classLoader 双亲委派机制
@@ -52,6 +61,17 @@ classLoader 双亲委派机制
 1.rt.jar bootrap
 2.ext.jar extensionClassLoader
 3.AppClassLoader
+
+
+类的加载机制与过程：
+
+编译阶段、加载阶段、运行阶段
+
+五个步骤：
+
+1.加载。2.验证 3.准备 (初始化0值) 4.解析 5.初始化。 （默认值）
+
+装载，链接，初始化
 
 
 垃圾回收算法：
@@ -78,6 +98,33 @@ fullGc:
 2. 大对象进入老年代，空间不足
 
 3. 显示调用system.gc
+
+
+JDK的自动拆装箱
+
+1.基础类型和包装类型 自动转换
+
+2.使用场景：  集合对象 需要是Object类。 
+
+
+Servlet 是一个java接口，
+
+处理 请求-相应的模型，init方法 ， service 方法，destroy方法
+
+
+网络通信 BIO,NIO,AIO
+
+
+BIO 同步阻塞
+
+NIO 同步非阻塞
+
+AIO 异步非阻塞
+
+
+NIO (选择器，缓冲区，线程,channel通道)
+
+异步响应模型，http长连接， 后端线程池，队列
 
 
 
