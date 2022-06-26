@@ -1,8 +1,6 @@
 package com.example.sort;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.Arrays;
 
 /**
  * 希尔排序
@@ -17,42 +15,9 @@ import java.util.Random;
  */
 public class ShellSort {
 
-    public static void main(String[] args) {
-        List<Integer> list = new ArrayList<Integer>();
-        for (int i = 0; i < 90000; i++) {
-            list.add(i);
-        }
-        Random r = new Random();
-        for (int i = 0; i < 10000; i++) {
-            int random = r.nextInt(10000);
-            list.add(random);
-        }
+    public static void shellSort(int[] numss) {
 
-        System.out.println("初始数组：" + list);
-        //int[] nums = { 3, 2, 4, 1, 5, 5, 6, 2, 1, 4, 5, 6 };
-
-        Integer[] numss = new Integer[list.size()];
-
-        numss = list.toArray(numss);
-
-        int[] nums = new int[numss.length];
-
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = numss[i];
-        }
-
-        //SortUtils.printfNums(nums);
-
-        //InsertSort.insertSort(nums);
-        //BubbleSort.bubbleSort(nums);
-        //QuickSort.quickSort(nums);
-        //SelectSort.selectSort(nums);
-        shellSort(nums);
-
-        //SortUtils.printfNums(nums);
-    }
-
-    public static void shellSort(int[] nums) {
+        int[] nums = Arrays.copyOf(numss, numss.length);
 
         long start = System.currentTimeMillis();
         int gap = nums.length;

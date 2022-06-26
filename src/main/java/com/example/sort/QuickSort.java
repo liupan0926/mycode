@@ -1,5 +1,7 @@
 package com.example.sort;
 
+import java.util.Arrays;
+
 /**
  * 快速排序 通过一趟排序将无序序列分为独立的两个序列，第一个序列的值均比第二个序列的值小。然后递归地排列两个子序列，以达到整个序列有序
  * 
@@ -13,7 +15,8 @@ public class QuickSort {
 
     }
 
-    public static void quickSort(int[] nums) {
+    public static void quickSort(int[] numss) {
+        int[] nums = Arrays.copyOf(numss, numss.length);
         long start = System.currentTimeMillis();
         // 3,2,4,1,5
         // 以3位基准，
@@ -22,6 +25,7 @@ public class QuickSort {
         myQuickSort(0, nums.length - 1, nums);
         Long cost = System.currentTimeMillis() - start;
         System.out.println("快速排序耗时:" + cost);
+        SortUtils.printfNums(nums);
     }
 
     private static void myQuickSort(int left, int right, int[] nums) {

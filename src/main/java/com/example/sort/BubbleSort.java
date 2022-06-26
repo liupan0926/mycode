@@ -1,5 +1,7 @@
 package com.example.sort;
 
+import java.util.Arrays;
+
 /**
  * 冒泡排序
  * 
@@ -16,10 +18,11 @@ public class BubbleSort {
     /**
      * @param nums
      */
-    public static void bubbleSort(int[] nums) {
+    public static void bubbleSort(int[] numss) {
         //-3,2,1,5,2
         //-2,1,3,2,5
         //-1,2,2,3,5
+        int[] nums = Arrays.copyOf(numss, numss.length);
 
         //i 代表第几趟排序
         // 从 前 n-i+1 个元素 排序，i=1时，前n个元素;i=2时，前n-1个元素 

@@ -1,5 +1,7 @@
 package com.example.sort;
 
+import java.util.Arrays;
+
 /**
  * 选择排序 类SelectSort.java的实现描述：TODO 类实现描述
  * 
@@ -14,9 +16,10 @@ public class SelectSort {
         SortUtils.printfNums(nums);
     }
 
-    public static void selectSort(int[] nums) {
-        long start = System.currentTimeMillis();
+    public static void selectSort(int[] numss) {
 
+        int[] nums = Arrays.copyOf(numss, numss.length);
+        long start = System.currentTimeMillis();
         //n个元素找到最小值，然后n-1个元素再找到最小值
         for (int i = 0; i < nums.length; i++) {
             int min = nums[i];
@@ -33,6 +36,6 @@ public class SelectSort {
         }
 
         Long cost = System.currentTimeMillis() - start;
-        System.out.println("快速排序耗时:" + cost);
+        System.out.println("选择排序耗时:" + cost);
     }
 }

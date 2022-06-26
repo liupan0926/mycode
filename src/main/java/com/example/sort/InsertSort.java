@@ -1,5 +1,7 @@
 package com.example.sort;
 
+import java.util.Arrays;
+
 /**
  * 插入排序
  * 
@@ -19,7 +21,8 @@ public class InsertSort {
      * 
      * @param nums
      */
-    public static void insertSort(int[] nums) {
+    public static void insertSort(int[] numss) {
+        int[] nums = Arrays.copyOf(numss, numss.length);
 
         long start = System.currentTimeMillis();
 
