@@ -57,3 +57,16 @@ CopyOnWriteArrayList：
 加锁 ，复制数组，修改数据，更改指针
 
 
+##java关键字 
+
+1.viloent
+
+可见性，指令重排，不保证原子性
+
+2.transient
+
+序列化相关 。静态变量
+
+
+
+
