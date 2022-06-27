@@ -1,5 +1,10 @@
 
 
+
+
+https://www.cnblogs.com/wangjzh/p/5258254.html 
+
+
 1.Java集合 IO 多线程 网络基础框架  ,分布式 缓存 消息 搜索等机制
 2.Spring Mybatis Cache Rpc JVM等机制，熟练使用设计模式
 3.高可用 高扩展  高性能 
