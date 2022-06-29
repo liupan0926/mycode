@@ -22,22 +22,23 @@ public class Solution136 {
      */
     public static int singleNumber(int[] nums) {
         //1.快排方式
-        //        quicksort(nums);
-        //        SortUtils.printfNums(nums);
-        //        for (int i = 0; i < nums.length; i = i + 2) {
-        //            if (nums[i] != nums[i + 1]) {
-        //                return nums[i];
-        //            }
-        //        }
-
-        //2.异或方式 , a ^^ a = 0; a^^b^^a= a^^a^^b; 0^^b = b;
-        int res = nums[0];
-        if (nums.length > 1) {
-            for (int i = 1; i < nums.length; i++) {
-                res = res ^ nums[i];
+        quicksort(nums);
+        SortUtils.printfNums(nums);
+        for (int i = 0; i < nums.length; i = i + 2) {
+            if (nums[i] != nums[i + 1]) {
+                return nums[i];
             }
         }
-        return res;
+        return 0;
+
+        //2.异或方式 , a ^^ a = 0; a^^b^^a= a^^a^^b; 0^^b = b;
+        //        int res = nums[0];
+        //        if (nums.length > 1) {
+        //            for (int i = 1; i < nums.length; i++) {
+        //                res = res ^ nums[i];
+        //            }
+        //        }
+        //        return res;
     }
 
     private static void quicksort(int[] nums) {

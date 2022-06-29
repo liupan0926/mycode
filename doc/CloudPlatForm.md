@@ -10,6 +10,9 @@ https://blog.csdn.net/itcast_cn/article/details/123186227
 
 
 
+K8s 和  docker ，需要了解以下使用方式。 这块现在是系统部署的主流方案。
+
+这个一定要了解。
 
 
 1.晋升PPT
