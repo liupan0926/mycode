@@ -21,15 +21,15 @@ public class HelloServiceImpl implements HelloService, ApplicationContextAware {
     @Override
     public String sayHello(String word) {
         String threadName = Thread.currentThread().getName() + "_" + word;
-        UserService userService = (UserService) context.getBean("userService");
-
-        User user = new User();
-
-        user.setUserName(threadName);
-        user.setPassWord("default");
-        user.setRealName(word);
-
-        userService.InsertUser(user);
+//        UserService userService = (UserService) context.getBean("userService");
+//
+//        User user = new User();
+//
+//        user.setUserName(threadName);
+//        user.setPassWord("default");
+//        user.setRealName(word);
+//
+//        userService.InsertUser(user);
 
         return threadName;
     }

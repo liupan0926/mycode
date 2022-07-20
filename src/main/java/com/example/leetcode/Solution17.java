@@ -10,7 +10,7 @@ import java.util.List;
  * 
  * @author liupan Jun 7, 2022 4:15:16 PM
  */
-public class LetterCombinations {
+public class Solution17 {
 
     public static void main(String[] args) {
 
