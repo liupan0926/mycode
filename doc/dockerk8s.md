@@ -57,6 +57,14 @@ docker logs --tail=5 tomcat8081
 
 docker logs -f -t --since="2020-12-1" --tail=10 tomcat8081
 
+数据卷
+
+docker run -d --name tomcat8081 -p 8081:8080 -v /Users/liupan/Desk/docker-volumn:/usr/local/tomcat/webapps/ tomcat
+容器之间共享和重用，修改立马生效
+
+
+docker run -d --name nginx-test -p 80:80 -v /Users/liupan/Desktop/docker-volumn/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /Users/liupan/Desktop/docker-volumn/nginx/html:/usr/share/nginx/html -v /Users/liupan/Desktop/docker-volumn/nginx/conf/conf.d/default.conf:/etc/nginx/conf.d/default.conf -v /Users/liupan/Desktop/docker-volumn/nginx/logs:/var/log/nginx nginx
+
 
 
 
