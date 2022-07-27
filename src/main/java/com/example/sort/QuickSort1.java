@@ -1,5 +1,7 @@
 package com.example.sort;
 
+import java.util.Arrays;
+
 /**
  * 
  * <pre>
@@ -15,26 +17,29 @@ public class QuickSort1 {
 	public static void main(String[] args) {
 		int[] nums = { 5, 3, 4, 2, 1, 6, 8, 9 };
 
-		QuickSort1 sol = new QuickSort1();
-		sol.quickSort(nums);
+		quickSort(nums);
+
 		SortUtils.printfNums(nums);
 	}
 
-	public void quickSort(int[] nums) {
+	public static void quickSort(int[] numss) {
 		// 5,3,4,2,1
 
+		int[] nums = Arrays.copyOf(numss, numss.length);
+		long start = System.currentTimeMillis();
 		int left = 0;
 		int right = nums.length - 1;
-
 		quickSort(left, right, nums);
-
+		Long cost = System.currentTimeMillis() - start;
+		System.out.println("快速排序1耗时:" + cost);
+		// SortUtils.printfNums(nums);
 	}
 
-	private void quickSort(int start, int end, int[] nums) {
+	private static void quickSort(int start, int end, int[] nums) {
 
 		int left = start;
 		int right = end;
-		int midIndex = left+(right - left + 1) / 2;
+		int midIndex = left + (right - left + 1) / 2;
 		int number = nums[midIndex];
 
 		while (left < right) {
@@ -53,7 +58,7 @@ public class QuickSort1 {
 			midIndex = left;
 		}
 
-		SortUtils.printfNums(nums);
+		// SortUtils.printfNums(nums);
 
 		if (midIndex < end - 1) {
 			quickSort(midIndex + 1, end, nums);
@@ -65,7 +70,7 @@ public class QuickSort1 {
 
 	}
 
-	private void swap(int midIndex, int right, int[] nums) {
+	private static void swap(int midIndex, int right, int[] nums) {
 		int temp = nums[midIndex];
 		nums[midIndex] = nums[right];
 		nums[right] = temp;

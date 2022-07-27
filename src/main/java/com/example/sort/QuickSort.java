@@ -25,7 +25,7 @@ public class QuickSort {
         myQuickSort(0, nums.length - 1, nums);
         Long cost = System.currentTimeMillis() - start;
         System.out.println("快速排序耗时:" + cost);
-        SortUtils.printfNums(nums);
+        //SortUtils.printfNums(nums);
     }
 
     private static void myQuickSort(int left, int right, int[] nums) {
