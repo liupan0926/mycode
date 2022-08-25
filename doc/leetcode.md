@@ -34,6 +34,10 @@ while(i<=n)
 
 
 
+https://www.zhihu.com/question/36738189/answer/908664455
+
+
+
 
 
 

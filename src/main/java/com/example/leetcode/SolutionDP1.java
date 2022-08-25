@@ -19,7 +19,7 @@ import java.util.Set;
 public class SolutionDP1 {
 
 	public static void main(String[] args) {
-		int[] nums = { 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 300 };
+		int[] nums = { 1, 2, 3, 4, 5, 7, 8, 10, 20, 30, 40 };
 		System.out.println(getChild(nums));
 	}
 

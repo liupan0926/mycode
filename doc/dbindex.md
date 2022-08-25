@@ -69,13 +69,49 @@ InnoDb 和 MySqlDB,数据引擎不一样
 
  https://blog.csdn.net/jzj18792145926/article/details/123181752
 
+ ##ACID 
 
- ACID 
+原子性 Atomicity：
+
+Consi:一致性
+
+Isolation : 隔离性
+
+Duratity: 持久性
+
+
 
 
 ##自增的索引 和 UUID的索引
 
 自增索引不会改变树的结构，占用的空间也比较小。
+
+
+
+##MVCC的相关理解
+
+
+
+两个事务，一个读取数据，一个对这行数据做修改，如何处理？
+
+innoDb  第一次select 的时候，会生成一个数据快照(RR,可重复读),所以在一个事务里，它读取的数据是一样的，就是第一次select快照时生成的数据。
+
+RC ，每次select的时候，都会生成快照，所以就会读取到最新的数据。
+
+
+
+通过行的额外存储列：
+
+1.事务ID
+
+2.回滚指针
+
+
+
+根据事务隔离级别找对应version的数据。
+
+
+
 
 
 

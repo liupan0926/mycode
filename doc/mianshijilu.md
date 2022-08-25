@@ -169,15 +169,90 @@ https://zhuanlan.zhihu.com/p/373576459
 
 2022-07-27
 
-CDN的原理
+1. CDN的原理
+   1. 智能DNS(localdns,rootDns,aliyunDns(cname记录,a记录))
 
-物联网的架构
+2. 物联网的架构
+   1. 
 
-普遍的架构设计的套路是什么样的，有哪些关键性的因素?
+3. 普遍的架构设计的套路是什么样的，有哪些关键性的因素?
+   1. https://www.zhihu.com/question/395652253/answer/1959672118
+   2. Grokking the System Design Interview
+   3. https://www.zhihu.com/search?hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1959672118%7D&hybrid_search_source=Entity&q=Grokking%20the%20System%20Design%20Interview&search_source=Entity&type=content
+4. JDK的最新变化
+   1. java8 java11 最新 java18
 
-JDK的最新变化
+5. http http2.0 http3.0
+   1. http1.0
+      1. html语言文件
+      2. 短连接
 
-http http2.0 http3.0
+   2. http1.1
+      1. .css,.js等文件
+      2. host头处理
+      3. 长连接
+
+   3. http1.x（google的SPDY,这个基本被淘汰了）
+      1. 客户端取缓存
+      2. 多路复用，设置请求优先级
+      3. head压缩
+      4. 引入了https, SSL or TLS 协议
+
+   4. http2.0(https://www.jianshu.com/p/42ca44202ca4)
+      1. 1.1是基于文本来解析的，2.0是通过二进制来解析的。这就导致了1.1不能多路复用，因为判断不了 ，哪个消息文本对应哪个请求。服务器读取消息是循环读取，直到读取到空行。2.0用streamId来标识请求和消息的对应关系。
+      2. 多路复用，1.1是多个请求串行执行，2.0是并行执行。
+      3. header压缩方式不同。 （静态索引，动态索引）
+      4. 主动推送page.index相关的 js 和 css文件，不需客户端再发起。 顺序很重要，要先于正常请求之前把相关数据推送给客户端，防止客户端重复发起请求。
+
+   5. http3.0
+   6. 总结：
+      1. 1.1到2.0的进步，是解决哪些问题？
+         1. 多路复用的并行问题，请求的限制
+         2. header内容多，且基本一样，需要优化方案
+         3. 使用二进制 流+帧，解决请求并行问题
+         4. 服务端主动推送js ,css等相关资源，有一定顺序
+         5. stream请求可以设置优先级，保证重要请求优先执行
+         6. https://juejin.cn/post/6844903667569541133
+         7. 本质都是加快传输效率
+
+6. TCP UDP
+
+
+
+2022-08-09
+
+1.metaq消息消费的问题
+
+	如何保证高可用
+	如何保证消息不被重复消费
+	如何保证消息的顺序
+
+
+
+
+2022-08-17
+
+##java锁的相关实现
+
+##spring的事务
+
+##多线程通信打印
+
+##Dubbo相关源码
+
+##spring 如何解决启动时的循环依赖问题
+
+##线程的 锁机制如何实现的synchronized
+
+##物联网 区块链
+
+##抽象类能使用synchronized关键字吗？ 
+
+不能，synchronized 跟实现细节有关
+
+4个java 编译是几个.class文件
+
+这个看java文件里 有几个class类，一个java文件有4个class类（包含interface）,则会编译生成4个.class文件。
 
 
 

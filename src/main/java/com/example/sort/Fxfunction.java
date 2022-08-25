@@ -9,18 +9,18 @@ public class Fxfunction {
 
     public static void main(String[] args) {
 
-        int n = 1000;
-//        long start = System.currentTimeMillis();
-//        int res = fx(n);
-//        Long cost = System.currentTimeMillis() - start;
-//        System.out.println("递归耗时:" + cost);
-//        System.out.println("f" + n + ":" + res);
+        int n = 50;
+        long start = System.currentTimeMillis();
+        int res = fx(n);
+        Long cost = System.currentTimeMillis() - start;
+        System.out.println("递归耗时:" + cost);
+        System.out.println("f" + n + ":" + res);
 
-        long start1 = System.currentTimeMillis();
-        int ress = fxDynamic(n);
-        Long cost1 = System.currentTimeMillis() - start1;
-        System.out.println("动态规划耗时:" + cost1);
-        System.out.println("f" + n + ":" + ress);
+		long start1 = System.currentTimeMillis();
+		int ress = fxDynamic(n);
+		Long cost1 = System.currentTimeMillis() - start1;
+		System.out.println("动态规划耗时:" + cost1);
+		System.out.println("f" + n + ":" + ress);
     }
 
     /**

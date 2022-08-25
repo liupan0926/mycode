@@ -89,7 +89,6 @@ Eden空间 ，  survivor（from,to）, old 老年底。
 
 miniGc:eden空间不足
 
-magorGC: 
 
 fullGc:
 

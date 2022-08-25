@@ -22,6 +22,19 @@ https://blog.csdn.net/m0_60478027/article/details/119215355
 
 
 
+###相关面试问题
+
+Redis 基本的数据结构都有哪些？具体操作命令是什么？（挑了几个基本操作操作命令，进行考察）
+Redis 基本数据结构的底层实现原理有了解吗？（挑了几个底层实现的操作，问了具体的时间复杂度）
+Redis 为什么不直接使用 C 字符串，而要自己构建一种字符串抽象类型 SDS(simple dynamic string)？
+Redis 的持久化方式有了解吗？能大概说一下吗？
+如何使用 Redis 实现一个可靠的消息队列？说一下你的设计方案。
+
+作者：gopherhiro
+链接：https://leetcode.cn/circle/discuss/0oJK2T/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 
 
 ##本地缓存：
